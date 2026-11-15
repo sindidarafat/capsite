@@ -6,6 +6,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { getJobs, getSite } from "@/lib/store";
 import { formatDeadline, isOpen } from "@/lib/jobs";
 import EmailLink from "@/components/site/EmailLink";
+import Accent from "@/components/site/Accent";
 
 export const revalidate = 3600; // re-check job deadlines hourly
 
@@ -41,10 +42,15 @@ export default async function CareersPage() {
 
         {open.length === 0 ? (
           <div className="rounded-[1.25rem] bg-paper p-10 text-center md:p-16">
-            <p className="t-h3">No openings right now.</p>
-            <p className="mt-3 text-stone">
-              Send your portfolio to{" "}
-              <EmailLink email={company.careersEmail} subject="Portfolio for CAP" className="link-u font-semibold text-ink" /> — we keep great work on file.
+            <p className="t-h3">
+              Our team is full. Our curiosity isn&apos;t.
+              <br />
+              <Accent text="Still listening." />
+            </p>
+            <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-stone">
+              No open seats at the moment, but we believe great people can create opportunities that don&apos;t exist yet. Introduce yourself
+              at <EmailLink email={company.careersEmail} subject="Introducing myself to CAP" className="link-u font-semibold text-ink" /> and
+              we would love to hear from you!
             </p>
           </div>
         ) : (
