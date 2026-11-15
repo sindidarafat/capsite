@@ -1,16 +1,5 @@
 [
   {
-    "id": "sindid-arafat",
-    "name": "Sindid Arafat",
-    "role": "Data Analyst ",
-    "department": "analytics",
-    "photo": "/media/team/img-6392-removebg-preview.png",
-    "bio": "Sindid Arafat is a Data Analyst. He's work includes Analyzing the market and campaign data to identify trends, patterns and untapped growth opportunities for clients. Transform raw data into clear insights and actionable recommendations to support strategic team and marketing decisions. Monitor performance metrics and optimize campaigns based on data-driven findings to improve ROI and engagement. Develop primary websites for clients to understand a platform and give digital solutions.",
-    "linkedin": "",
-    "published": true,
-    "order": 0
-  },
-  {
     "id": "syeda-nilima",
     "name": "Syeda Nilima Dola",
     "role": "Chief Executive Officer",
@@ -19,7 +8,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 1
+    "order": 0
   },
   {
     "id": "tanmay-paul",
@@ -30,18 +19,18 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 2
+    "order": 1
   },
   {
-    "id": "amit-pramanik",
-    "name": "Amit Pramanik",
-    "role": "Creative Director",
-    "department": "production",
-    "photo": "/media/team/amit-pramanik.webp",
+    "id": "meem-arafat-manab",
+    "name": "Meem Arafat Manab",
+    "role": "Chief of Data",
+    "department": "leadership",
+    "photo": "/media/team/meem-arafat-manab.webp",
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 3
+    "order": 2
   },
   {
     "id": "manjurul-mahmud",
@@ -49,6 +38,17 @@
     "role": "Chief of Strategy",
     "department": "analytics",
     "photo": "/media/team/manjurul-mahmud.webp",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 3
+  },
+  {
+    "id": "ahmed-hasan-sunny",
+    "name": "Ahmed Hasan Sunny",
+    "role": "Chief of Business Development",
+    "department": "leadership",
+    "photo": "/media/team/ahmed-hasan-sunny.webp",
     "bio": "",
     "linkedin": "",
     "published": true,
@@ -66,26 +66,15 @@
     "order": 5
   },
   {
-    "id": "meem-arafat-manab",
-    "name": "Meem Arafat Manab",
-    "role": "Chief of Data",
-    "department": "leadership",
-    "photo": "/media/team/meem-arafat-manab.webp",
+    "id": "amit-pramanik",
+    "name": "Amit Pramanik",
+    "role": "Creative Director",
+    "department": "production",
+    "photo": "/media/team/amit-pramanik.webp",
     "bio": "",
     "linkedin": "",
     "published": true,
     "order": 6
-  },
-  {
-    "id": "ahmed-hasan-sunny",
-    "name": "Ahmed Hasan Sunny",
-    "role": "Chief of Business Development",
-    "department": "leadership",
-    "photo": "/media/team/ahmed-hasan-sunny.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 7
   },
   {
     "id": "faisal-shahriar-anik",
@@ -96,7 +85,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 8
+    "order": 7
   },
   {
     "id": "imamul-baker-apolo",
@@ -107,51 +96,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 9
-  },
-  {
-    "id": "tahmina-taj",
-    "name": "Tahmina Taj",
-    "role": "Client Service Executive",
-    "department": "content",
-    "photo": "/media/team/tahmina-taj.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 10
-  },
-  {
-    "id": "ragib-shahriar",
-    "name": "Ragib Shahriar",
-    "role": "Copy Supervisor",
-    "department": "content",
-    "photo": "/media/team/ragib-shahriar.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 11
-  },
-  {
-    "id": "rashedul-islam",
-    "name": "Rashedul Islam",
-    "role": "Admin",
-    "department": "operations",
-    "photo": "/media/team/rashedul-islam.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 12
-  },
-  {
-    "id": "md-rasadul-kabir",
-    "name": "Md. Rasadul Kabir",
-    "role": "Data Analyst Executive",
-    "department": "analytics",
-    "photo": "/media/team/md-rasadul-kabir.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 13
+    "order": 8
   },
   {
     "id": "hasin-ishraq-bijoy",
@@ -162,7 +107,51 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 14
+    "order": 9
+  },
+  {
+    "id": "md-rakib-ul-islam",
+    "name": "Md. Rakib-ul-Islam",
+    "role": "Senior Visualizer",
+    "department": "production",
+    "photo": "",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 10
+  },
+  {
+    "id": "hasib-mohammad-ashiq",
+    "name": "Hasib Mohammad Ashiq",
+    "role": "Human Resources (HR)",
+    "department": "operations",
+    "photo": "",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 11
+  },
+  {
+    "id": "tahmina-taj",
+    "name": "Tahmina Taj",
+    "role": "Client Service Executive",
+    "department": "content",
+    "photo": "/media/team/tahmina-taj.webp",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 12
+  },
+  {
+    "id": "ragib-shahriar",
+    "name": "Ragib Shahriar",
+    "role": "Copy Supervisor",
+    "department": "content",
+    "photo": "/media/team/ragib-shahriar.webp",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 13
   },
   {
     "id": "tahsim-uzzaman",
@@ -173,15 +162,26 @@
     "bio": "",
     "linkedin": "",
     "published": true,
+    "order": 14
+  },
+  {
+    "id": "rashedul-islam",
+    "name": "Rashedul Islam",
+    "role": "Admin",
+    "department": "operations",
+    "photo": "/media/team/rashedul-islam.webp",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
     "order": 15
   },
   {
-    "id": "md-rakib-ul-islam",
-    "name": "Md. Rakib-ul-Islam",
-    "role": "Senior Visualizer",
-    "department": "production",
-    "photo": "",
-    "bio": "",
+    "id": "sindid-arafat",
+    "name": "Sindid Arafat",
+    "role": "Data Analyst ",
+    "department": "analytics",
+    "photo": "/media/team/img-6392-removebg-preview.png",
+    "bio": "Sindid Arafat is a Data Analyst. He's work includes Analyzing the market and campaign data to identify trends, patterns and untapped growth opportunities for clients. Transform raw data into clear insights and actionable recommendations to support strategic team and marketing decisions. Monitor performance metrics and optimize campaigns based on data-driven findings to improve ROI and engagement. Develop primary websites for clients to understand a platform and give digital solutions.",
     "linkedin": "",
     "published": true,
     "order": 16

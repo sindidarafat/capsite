@@ -3,23 +3,12 @@ import Link from "next/link";
 import Media from "@/components/site/Media";
 import PageHero from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import { PillarDot } from "@/components/site/Pillar";
 import { getSite, getTeam } from "@/lib/store";
-import type { TeamMember } from "@/lib/types";
 import Accent from "@/components/site/Accent";
 
 export const metadata: Metadata = {
   title: "Team",
   description: "Meet the strategists, writers, analysts, designers and filmmakers behind CAP's campaigns and productions.",
-};
-
-const DEPT_ORDER: TeamMember["department"][] = ["leadership", "content", "analytics", "production", "operations"];
-const DEPT_LABEL: Record<TeamMember["department"], string> = {
-  leadership: "Leadership",
-  content: "Content",
-  analytics: "Analytics",
-  production: "Production",
-  operations: "Operations",
 };
 
 function initials(name: string) {
@@ -34,7 +23,6 @@ function initials(name: string) {
 
 export default async function TeamPage() {
   const [team, site] = await Promise.all([getTeam(), getSite()]);
-  const groups = DEPT_ORDER.map((d) => ({ d, people: team.filter((t) => t.department === d) })).filter((g) => g.people.length);
 
   return (
     <>
@@ -44,17 +32,10 @@ export default async function TeamPage() {
         intro="From planning to final execution, we work as one team — shaping the work together, start to finish."
       />
 
-      {groups.map(({ d, people }) => (
-        <section key={d} className="wrap pb-20 md:pb-28" aria-labelledby={`dept-${d}`}>
-          <div className="mb-10 flex items-center justify-between border-t hairline pt-5">
-            <h2 id={`dept-${d}`} className="t-label flex items-center gap-3 text-stone">
-              {d === "content" || d === "analytics" || d === "production" ? <PillarDot id={d} className="!h-1.5 !w-1.5" /> : null}
-              {DEPT_LABEL[d]}
-            </h2>
-            <span className="t-label text-mist">{String(people.length).padStart(2, "0")}</span>
-          </div>
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 md:gap-x-6 lg:grid-cols-4">
-            {people.map((p, i) => (
+      {/* everyone together, in the order set in the admin (Team → order) */}
+      <section className="wrap pb-20 md:pb-28" aria-label="Team members">
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-10 border-t hairline pt-10 md:grid-cols-3 md:gap-x-6 md:gap-y-14 lg:grid-cols-4">
+          {team.map((p, i) => (
               <Reveal as="li" key={p.id} delay={(i % 4) * 0.06} className="group">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[1.25rem] bg-sand">
                   {p.photo ? (
@@ -81,10 +62,9 @@ export default async function TeamPage() {
                 <p className="text-sm text-stone">{p.role}</p>
                 {p.bio && <p className="mt-2 line-clamp-5 text-sm leading-relaxed text-graphite sm:line-clamp-none" title={p.bio}>{p.bio}</p>}
               </Reveal>
-            ))}
-          </ul>
-        </section>
-      ))}
+          ))}
+        </ul>
+      </section>
 
       {site.directors?.length > 0 && (
         <section className="wrap pb-20 md:pb-28" aria-labelledby="directors">
