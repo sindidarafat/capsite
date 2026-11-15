@@ -28,9 +28,6 @@ export default function WorkGrid({ works }: { works: Work[] }) {
             </button>
           ))}
         </div>
-        <p className="t-label text-stone" aria-live="polite">
-          {list.length} {list.length === 1 ? "project" : "projects"}
-        </p>
       </div>
 
       <motion.div layout className="grid gap-x-6 gap-y-16 md:grid-cols-2 md:gap-y-24">
