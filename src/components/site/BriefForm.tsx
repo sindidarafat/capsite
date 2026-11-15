@@ -34,7 +34,8 @@ const field =
 
 /** On the static (Cloudflare Pages) build there's no server, so briefs go to Web3Forms, which emails them to CAP. */
 const STATIC_SITE = process.env.NEXT_PUBLIC_STATIC_SITE === "1";
-const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "";
+// Web3Forms access key (public by design — it can only send briefs to CAP's inbox, cap.dhk@gmail.com)
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "d17f4196-b29b-4027-9f2d-f079e3f61ea9";
 
 function briefText(f: Form) {
   const details = [
