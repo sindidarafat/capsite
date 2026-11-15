@@ -3,6 +3,7 @@ import type { Site } from "@/lib/types";
 import { NAV } from "./nav";
 import Logo from "./Logo";
 import Accent, { accentColor } from "./Accent";
+import EmailLink from "@/components/site/EmailLink";
 
 /** Compact footer: CAP colour stripe, a strong invitation line, four columns, one legal line. */
 export default function Footer({ site }: { site: Site }) {
@@ -39,9 +40,7 @@ export default function Footer({ site }: { site: Site }) {
           <Link href="/contact" className="pill pill-ink !px-6 !py-3.5">
             Start a project <span aria-hidden>→</span>
           </Link>
-          <a href={`mailto:${company.email}`} className="link-u text-[1.05rem] font-semibold text-graphite hover:text-ink">
-            {company.email}
-          </a>
+          <EmailLink email={company.email} className="link-u text-[1.05rem] font-semibold text-graphite hover:text-ink" />
         </div>
       </div>
 
@@ -63,7 +62,7 @@ export default function Footer({ site }: { site: Site }) {
         <div className="col-span-2 sm:col-span-1">
           <Title i={1}>Contact</Title>
           <ul className="space-y-1.5">
-            <li><a href={`mailto:${company.email}`} className={`${link} hover:text-analytics-text`}>{company.email}</a></li>
+            <li><EmailLink email={company.email} className={`${link} hover:text-analytics-text`} /></li>
             <li><a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`} className={`${link} hover:text-analytics-text`}>{company.phone}</a></li>
           </ul>
           {company.hours && <p className="mt-3 text-[0.95rem] text-stone">{company.hours}</p>}

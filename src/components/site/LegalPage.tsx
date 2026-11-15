@@ -1,4 +1,5 @@
 import PageHero from "./PageHero";
+import EmailLink from "./EmailLink";
 
 export default function LegalPage({ label, title, items, email }: { label: string; title: string; items: { title: string; text: string }[]; email: string }) {
   return (
@@ -16,7 +17,7 @@ export default function LegalPage({ label, title, items, email }: { label: strin
             </div>
           ))}
           <p className="border-t hairline pt-10 text-stone">
-            Questions? Write to <a className="link-u font-semibold text-ink" href={`mailto:${email}`}>{email}</a>.
+            Questions? Write to <EmailLink email={email} className="link-u font-semibold text-ink" />.
           </p>
         </div>
       </section>

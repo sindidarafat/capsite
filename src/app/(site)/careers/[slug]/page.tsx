@@ -6,6 +6,7 @@ import { Reveal, RiseText } from "@/components/site/Reveal";
 import { getJob, getJobs } from "@/lib/store";
 import { formatDeadline, isOpen } from "@/lib/jobs";
 import Accent from "@/components/site/Accent";
+import EmailLink from "@/components/site/EmailLink";
 
 export const revalidate = 3600; // re-check job deadlines hourly
 
@@ -41,7 +42,6 @@ export default async function JobPage({ params }: Props) {
   const job = await getJob((await params).slug);
   if (!job) notFound();
   const open = isOpen(job);
-  const mailto = `mailto:${job.applyEmail}?subject=${encodeURIComponent(job.subjectLine || `Application for ${job.title}`)}`;
 
   return (
     <article className="wrap pb-28 pt-[calc(var(--header-h)+3rem)] md:pb-40 md:pt-[calc(var(--header-h)+5rem)]">
@@ -71,7 +71,9 @@ export default async function JobPage({ params }: Props) {
             </dl>
             {open ? (
               <>
-                <a href={mailto} className="pill pill-ink w-full justify-center">Apply by email <span aria-hidden>→</span></a>
+                <EmailLink email={job.applyEmail} subject={job.subjectLine || `Application for ${job.title}`} wrapClassName="block w-full" className="pill pill-ink w-full justify-center">
+                  Apply by email <span aria-hidden>→</span>
+                </EmailLink>
                 <p className="text-xs leading-relaxed text-stone">
                   Send to <strong>{job.applyEmail}</strong> with the subject “{job.subjectLine || `Application for ${job.title}`}”.
                 </p>

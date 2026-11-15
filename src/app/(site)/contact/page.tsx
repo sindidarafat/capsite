@@ -4,6 +4,7 @@ import PageHero from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { getSite } from "@/lib/store";
 import Accent from "@/components/site/Accent";
+import EmailLink from "@/components/site/EmailLink";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -34,7 +35,7 @@ export default async function ContactPage() {
         <aside className="grid gap-10 sm:grid-cols-2 lg:col-span-4 lg:block lg:space-y-10">
           <Reveal>
             <p className="t-label mb-4 text-stone">Email</p>
-            <a href={`mailto:${company.email}`} className="t-h3 link-u">{company.email}</a>
+            <EmailLink email={company.email} className="t-h3 link-u" />
           </Reveal>
           <Reveal delay={0.05}>
             <p className="t-label mb-4 text-stone">Phone</p>

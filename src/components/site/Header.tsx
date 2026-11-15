@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import Logo from "./Logo";
 import { getLenis } from "./SmoothScroll";
 import { NAV } from "./nav";
+import EmailLink from "./EmailLink";
 
 const EASE = [0.76, 0, 0.24, 1] as const;
 
@@ -134,7 +135,7 @@ export default function Header({ email, socials }: { email: string; socials: { l
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <a href={`mailto:${email}`} className="text-lg font-semibold">{email}</a>
+              <EmailLink email={email} className="text-lg font-semibold" />
               <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-mist">
                 {socials.map((s) => (
                   <a key={s.label} href={s.url} target="_blank" rel="noreferrer" className="hover:text-bone">{s.label}</a>

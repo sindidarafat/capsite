@@ -5,6 +5,7 @@ import PageHero from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { getJobs, getSite } from "@/lib/store";
 import { formatDeadline, isOpen } from "@/lib/jobs";
+import EmailLink from "@/components/site/EmailLink";
 
 export const revalidate = 3600; // re-check job deadlines hourly
 
@@ -25,8 +26,9 @@ export default async function CareersPage() {
 
       {site.about.teamImage && (
         <Reveal className="wrap">
-          <div className="aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-sand md:aspect-[21/8]">
-            <Media src={site.about.teamImage} alt="Life at CAP" className="h-full w-full" />
+          {/* natural aspect ratio: the whole team picture shows on every screen, nothing cropped */}
+          <div className="overflow-hidden rounded-[1.5rem] bg-sand">
+            <Media src={site.about.teamImage} alt="Life at CAP" className="block h-auto w-full" />
           </div>
         </Reveal>
       )}
@@ -42,7 +44,7 @@ export default async function CareersPage() {
             <p className="t-h3">No openings right now.</p>
             <p className="mt-3 text-stone">
               Send your portfolio to{" "}
-              <a className="link-u font-semibold text-ink" href={`mailto:${company.careersEmail}`}>{company.careersEmail}</a> — we keep great work on file.
+              <EmailLink email={company.careersEmail} subject="Portfolio for CAP" className="link-u font-semibold text-ink" /> — we keep great work on file.
             </p>
           </div>
         ) : (
