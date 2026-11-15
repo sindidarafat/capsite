@@ -3,7 +3,7 @@ import Link from "next/link";
 import Media from "@/components/site/Media";
 import PageHero from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import { getSite, getTeam } from "@/lib/store";
+import { getTeam } from "@/lib/store";
 import Accent from "@/components/site/Accent";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ function initials(name: string) {
 }
 
 export default async function TeamPage() {
-  const [team, site] = await Promise.all([getTeam(), getSite()]);
+  const team = await getTeam();
 
   return (
     <>
@@ -65,23 +65,6 @@ export default async function TeamPage() {
           ))}
         </ul>
       </section>
-
-      {site.directors?.length > 0 && (
-        <section className="wrap pb-20 md:pb-28" aria-labelledby="directors">
-          <div className="mb-10 flex items-center justify-between border-t hairline pt-5">
-            <h2 id="directors" className="t-label text-stone">Directors</h2>
-            <span className="t-label text-mist">{String(site.directors.length).padStart(2, "0")}</span>
-          </div>
-          <ul className="grid gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
-            {site.directors.map((name, i) => (
-              <Reveal as="li" key={name} delay={(i % 3) * 0.06} className="flex items-baseline gap-5 border-b hairline py-5">
-                <span className="t-label text-mist">{String(i + 1).padStart(2, "0")}</span>
-                <span className="t-h3">{name}</span>
-              </Reveal>
-            ))}
-          </ul>
-        </section>
-      )}
 
       <section className="wrap pb-28 md:pb-36">
         <Reveal className="flex flex-col gap-8 rounded-[1.5rem] bg-sand p-8 md:flex-row md:items-center md:justify-between md:p-14">

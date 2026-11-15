@@ -263,7 +263,7 @@ export const SITE_TABS: { id: string; label: string; fields: Field[] }[] = [
           { key: "teamImage", label: "Team photo", type: "media", accept: "any", folder: () => "careers", wide: true },
         ],
       },
-      { key: "directors", label: "Directors (shown on the Team page)", type: "strings" },
+      { key: "directors", label: "Directors (not shown on the website)", type: "strings" },
       {
         key: "careersIntro",
         label: "Careers intro",
