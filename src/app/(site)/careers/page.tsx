@@ -18,7 +18,6 @@ export const metadata: Metadata = {
 export default async function CareersPage() {
   const [jobs, site] = await Promise.all([getJobs(), getSite()]);
   const open = jobs.filter((j) => isOpen(j));
-  const closed = jobs.filter((j) => !isOpen(j));
   const { careersIntro, company } = site;
 
   return (
@@ -69,19 +68,6 @@ export default async function CareersPage() {
               </li>
             ))}
           </ul>
-        )}
-
-        {closed.length > 0 && (
-          <details className="mt-14">
-            <summary className="t-label cursor-pointer text-stone">Recently closed ({closed.length})</summary>
-            <ul className="mt-6 space-y-2 text-stone">
-              {closed.map((j) => (
-                <li key={j.slug}>
-                  <Link href={`/careers/${j.slug}`} className="link-u">{j.title}</Link>
-                </li>
-              ))}
-            </ul>
-          </details>
         )}
       </section>
     </>
