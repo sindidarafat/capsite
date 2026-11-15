@@ -1,0 +1,305 @@
+{
+  "company": {
+    "name": "CAP",
+    "legalName": "Content Analytics Production Ltd.",
+    "tagline": "Content • Analytics • Production",
+    "email": "hello@cap.direct",
+    "careersEmail": "office@cap.direct",
+    "phone": "+880 1743-564147",
+    "addressLines": [
+      "4th Floor, Rosy House, 27, Road No. 1",
+      "Niketon, Gulshan 1",
+      "Dhaka 1212, Bangladesh"
+    ],
+    "mapUrl": "https://maps.google.com/?q=Rosy+House+Road+1+Niketon+Gulshan+1+Dhaka",
+    "hours": "Sunday – Thursday, 10:00 – 19:00"
+  },
+  "socials": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/cap.ltd/"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/company/cap-ltd/"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=61582332989941"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@cap_ltd"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@CAP-Ltd"
+    }
+  ],
+  "seo": {
+    "title": "CAP — Content, Analytics & Production Agency in Dhaka",
+    "description": "CAP is a creative agency in Dhaka, Bangladesh, bringing content, analytics and production into one creative system — from strategy to launch.",
+    "ogImage": "/media/brand/cap-social-banner.jpg"
+  },
+  "hero": {
+    "eyebrow": "Creative agency · Dhaka",
+    "lineOne": "We make work that",
+    "emphasis": "earns",
+    "lineTwo": "attention.",
+    "intro": "CAP is a Dhaka-based creative agency that turns ideas into films, animations, ads and audio-visual content people actually want to watch — with sharp storytelling, solid craft and a little creative mischief.",
+    "showreel": "/media/showreel/showreel-web.mp4",
+    "poster": "/media/showreel/showreel-poster.jpg"
+  },
+  "statement": {
+    "text": "Most agencies separate the brief from the build.",
+    "emphasis": "We don't.",
+    "body": "Strategy, data and craft sit inside one team, in one room, on one timeline. That means sharper ideas before execution begins — and work that gets out the door without losing what made it good."
+  },
+  "pillars": [
+    {
+      "id": "content",
+      "label": "Content",
+      "kicker": "Ideas · Narrative · Strategy",
+      "text": "Creative strategy, campaign ideas, brand storytelling and social content systems shaped around what audiences will actually stop for."
+    },
+    {
+      "id": "analytics",
+      "label": "Analytics",
+      "kicker": "Insights · Audience · Optimization",
+      "text": "Audience intelligence, media planning and performance optimization — so campaigns evolve with evidence instead of guesswork."
+    },
+    {
+      "id": "production",
+      "label": "Production",
+      "kicker": "Execution · Visuals · Experience",
+      "text": "Films, commercials, reels, animation, photography and post — executed with the craft and speed real launches need."
+    }
+  ],
+  "stats": [
+    {
+      "value": 1.2,
+      "suffix": "M",
+      "label": "Views on GenVote civic content in four months"
+    },
+    {
+      "value": 15,
+      "suffix": "+",
+      "label": "Brands and organisations we've worked with"
+    },
+    {
+      "value": 300,
+      "suffix": "K+",
+      "label": "Views on a single music video"
+    },
+    {
+      "value": 15,
+      "suffix": "",
+      "label": "Services across three pillars"
+    }
+  ],
+  "process": [
+    {
+      "title": "Map",
+      "text": "We map audience tension, brand intent and the commercial goal before any creative gets dressed up."
+    },
+    {
+      "title": "Shape",
+      "text": "Ideas are shaped into narrative systems, visual language and campaign structures that scale across formats."
+    },
+    {
+      "title": "Ship",
+      "text": "Production, publishing and optimization stay inside one operating rhythm, so execution never drifts from strategy."
+    }
+  ],
+  "about": {
+    "headline": "Partners with taste,",
+    "emphasis": "not vendors",
+    "headlineEnd": "waiting for instructions.",
+    "paragraphs": [
+      "Content Analytics Production (CAP) is a Dhaka-based creative agency that turns ideas into films, animations, ads and audio-visual content people actually want to watch. From screens to stages, we mix sharp storytelling, solid craft and a little creative mischief to deliver work that connects — beautifully and effectively.",
+      "Content gives us ideas, narrative and strategy. Analytics gives us insights, audience and optimization. Production gives us execution, visuals and experience. Because all three sit in one team, clients move from strategy to launch without managing disconnected agencies."
+    ],
+    "beliefs": [
+      {
+        "title": "Culturally alive",
+        "text": "Ideas that feel culturally alive instead of mechanically polished."
+      },
+      {
+        "title": "Clear by design",
+        "text": "Clear positioning, sharper decisions, and less noise between teams."
+      },
+      {
+        "title": "Disciplined craft",
+        "text": "Production discipline that gets work out without eroding the original idea."
+      }
+    ],
+    "quote": "We make work that can survive the brief, the deadline, and the audience.",
+    "teamImage": "/media/careers/cap-team.webp"
+  },
+  "clients": [
+    {
+      "name": "BRAC",
+      "logo": "/media/clients/brac.png",
+      "color": "#e82890",
+      "wordmark": false
+    },
+    {
+      "name": "IFES",
+      "logo": "/media/clients/ifes-mark.png",
+      "color": "#0a2c6e",
+      "wordmark": false
+    },
+    {
+      "name": "UNDP",
+      "logo": "/media/clients/undp.png",
+      "color": "#0468b1",
+      "wordmark": false
+    },
+    {
+      "name": "Election Commission Bangladesh",
+      "logo": "/media/clients/ecs.png",
+      "color": "#00704a",
+      "wordmark": false
+    },
+    {
+      "name": "Walton",
+      "logo": "/media/clients/walton.png",
+      "color": "#23318a",
+      "wordmark": true
+    },
+    {
+      "name": "Helio",
+      "logo": "/media/clients/helio.png",
+      "color": "#00574a",
+      "wordmark": true
+    },
+    {
+      "name": "Pran",
+      "logo": "/media/clients/pran.png",
+      "color": "#e31e24",
+      "wordmark": false
+    },
+    {
+      "name": "ACI Godrej Agrovet",
+      "logo": "/media/clients/aci.png",
+      "color": "#00a058",
+      "wordmark": false
+    },
+    {
+      "name": "Start Fund Bangladesh",
+      "logo": "/media/clients/start-network.png",
+      "color": "#0f7c74",
+      "wordmark": false
+    },
+    {
+      "name": "Centre for Policy Dialogue",
+      "logo": "/media/clients/cpd.png",
+      "color": "#283090",
+      "wordmark": false
+    },
+    {
+      "name": "Bongo",
+      "logo": "/media/clients/bongo-mark.png",
+      "color": "#d01828",
+      "wordmark": false
+    },
+    {
+      "name": "United International University",
+      "logo": "/media/clients/uiu.png",
+      "color": "#f08800",
+      "wordmark": false
+    },
+    {
+      "name": "SDS Manager",
+      "logo": "/media/clients/sds.png",
+      "color": "#4b55e0",
+      "wordmark": false
+    },
+    {
+      "name": "Leona",
+      "logo": "/media/clients/leona.png",
+      "color": "#8a6a9c",
+      "wordmark": false
+    },
+    {
+      "name": "Edison Group",
+      "logo": "",
+      "color": "#0057a8",
+      "wordmark": false
+    }
+  ],
+  "cta": {
+    "headline": "Let's make something",
+    "emphasis": "that moves.",
+    "text": "Thank you for spending time with our work. Tell us what you're building — we look forward to what we can create together."
+  },
+  "careersIntro": {
+    "headline": "Work with",
+    "emphasis": "people who care.",
+    "text": "We are a young, fast-moving crew of writers, analysts, designers and filmmakers. If you want your work to be seen — and to matter — we'd like to meet you. No open role that fits? Send your portfolio anyway."
+  },
+  "faq": [
+    {
+      "q": "What services does CAP offer?",
+      "a": "Three connected service lines. Content: creative strategy, campaign ideation, brand storytelling, influencer campaigns and social content systems. Analytics: audience intelligence, digital campaign systems, performance optimization, media planning and websites & reporting. Production: film, reels & commercials, animation & motion, photography and post-production & AI."
+    },
+    {
+      "q": "Where is CAP located?",
+      "a": "Our studio is on Road No. 1, Niketon, Gulshan 1, Dhaka, Bangladesh."
+    },
+    {
+      "q": "Do you work with international clients?",
+      "a": "Yes. We're based in Dhaka and work with both local and international brands and organizations."
+    },
+    {
+      "q": "What makes CAP different?",
+      "a": "Strategy, data and production sit inside one team. We don't just create content — we build data-informed marketing systems that scale with your ambitions."
+    }
+  ],
+  "legal": {
+    "privacy": [
+      {
+        "title": "Data we collect",
+        "text": "Contact details, project briefs, and analytics data used to improve our services."
+      },
+      {
+        "title": "How we use data",
+        "text": "To respond to inquiries, deliver services, and inform performance reporting."
+      },
+      {
+        "title": "Storage & retention",
+        "text": "Project data is stored securely and retained for up to 24 months post-engagement."
+      },
+      {
+        "title": "Your rights",
+        "text": "You may request access, correction, or deletion of your data by contacting us."
+      }
+    ],
+    "terms": [
+      {
+        "title": "Engagement scope",
+        "text": "Project scopes are defined in a written statement of work outlining deliverables, timelines, and responsibilities."
+      },
+      {
+        "title": "Payment terms",
+        "text": "Invoices are issued monthly with a standard 14-day payment window unless otherwise agreed."
+      },
+      {
+        "title": "Intellectual property",
+        "text": "Upon final payment, clients receive usage rights for approved deliverables, excluding third-party assets."
+      },
+      {
+        "title": "Confidentiality",
+        "text": "We keep shared business information confidential and apply NDAs when required."
+      }
+    ]
+  },
+  "directors": [
+    "Sukorno Shahed Dhiman",
+    "Ahmed Hasan Sunny",
+    "Refat Khan Anik",
+    "Amit Pramanik",
+    "Syeda Nilima Dola",
+    "Naziul Islam Shovon"
+  ]
+}

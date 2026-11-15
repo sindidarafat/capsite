@@ -1,0 +1,83 @@
+[
+  {
+    "id": "content",
+    "name": "Content",
+    "intro": "Ideas, narrative and strategy. We design the creative thinking behind every post, reel and film — so each one has a purpose.",
+    "items": [
+      {
+        "title": "Creative Strategy",
+        "description": "The big idea and the plan behind it — positioning, themes and the creative direction every asset follows."
+      },
+      {
+        "title": "Campaign Ideation",
+        "description": "Concepts, rollout plans and launch timelines built to maximize reach and performance."
+      },
+      {
+        "title": "Brand Storytelling",
+        "description": "Narratives, scripts and copy that are visually sharp, culturally aware and aligned with brand identity."
+      },
+      {
+        "title": "Influencer Campaigns",
+        "description": "Creator-led campaigns that build authentic engagement, cultural relevance and platform-native connection."
+      },
+      {
+        "title": "Social Content Systems",
+        "description": "Content pillars, design systems and calendars that keep every channel consistent and on-brand."
+      }
+    ]
+  },
+  {
+    "id": "analytics",
+    "name": "Analytics",
+    "intro": "Insights, audience and optimization. We turn numbers into creative decisions — what to make, where to place it, and what to improve.",
+    "items": [
+      {
+        "title": "Audience Intelligence",
+        "description": "Research into behavior and preferences that shapes the content and the targeting."
+      },
+      {
+        "title": "Digital Campaign Systems",
+        "description": "Connected campaign journeys across social, web and paid — built to be measured."
+      },
+      {
+        "title": "Performance Optimization",
+        "description": "Continuous testing and tuning so campaigns evolve with evidence instead of guesswork."
+      },
+      {
+        "title": "Media Planning",
+        "description": "Audience-focused media buying across platforms — targeting, paid social and reach & engagement scaling."
+      },
+      {
+        "title": "Website, Reporting & Insights",
+        "description": "Interactive, Bangla-first websites and clear dashboards that show what's working and where to improve."
+      }
+    ]
+  },
+  {
+    "id": "production",
+    "name": "Production",
+    "intro": "Execution, visuals and experience. From OVCs and TVCs to reels, animation and film — we produce work built to move audiences.",
+    "items": [
+      {
+        "title": "Film Production",
+        "description": "Commercials, documentaries, drama and feature film — cinematic craft from development to delivery."
+      },
+      {
+        "title": "Reels & Commercials",
+        "description": "Fast, platform-native reels and commercials designed for retention and engagement."
+      },
+      {
+        "title": "Animation & Motion",
+        "description": "Brand-led motion systems and motion graphics that enhance recall and communication clarity."
+      },
+      {
+        "title": "Photography",
+        "description": "Product, campaign and event photography that becomes a lasting asset library."
+      },
+      {
+        "title": "Post Production & AI",
+        "description": "Editing, color, sound and AI-powered production for a polished, rapid final output."
+      }
+    ]
+  }
+]
