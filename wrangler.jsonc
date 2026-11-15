@@ -1,0 +1,15 @@
+// Cloudflare Workers (static assets) — hosts the public website for free.
+// Cloudflare runs `npm run build:static` (creates out/), then `npx wrangler deploy` uploads out/.
+// The admin panel is not part of this build; it only runs locally (`npm run dev`).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // must match the Worker name in the Cloudflare dashboard
+  "name": "capsite",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./out",
+    // /about → about.html, unknown paths → the site's 404 page
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
