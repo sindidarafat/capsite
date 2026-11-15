@@ -54,10 +54,13 @@ export default async function Home() {
                 "md:col-span-5",
                 "md:col-span-7 md:mt-40",
               ][i % 5];
-              const aspect = i === 0 ? "aspect-[4/5] sm:aspect-[21/9]" : i % 5 === 2 || i % 5 === 3 ? "aspect-[4/5]" : "aspect-[4/3]";
+              // a project left alone at the start of a pair goes full width instead of half a row
+              const lone = i === featured.length - 1 && (i % 5 === 1 || i % 5 === 3);
+              const wide = i === 0 || lone;
+              const aspect = wide ? "aspect-[4/5] sm:aspect-[21/9]" : i % 5 === 2 || i % 5 === 3 ? "aspect-[4/5]" : "aspect-[4/3]";
               return (
-                <Reveal key={w.slug} className={layout}>
-                  <WorkCard work={w} index={i} aspect={aspect} sizes={i === 0 ? "text-[clamp(1.6rem,3vw,3rem)]" : undefined} />
+                <Reveal key={w.slug} className={lone ? "md:col-span-12" : layout}>
+                  <WorkCard work={w} index={i} aspect={aspect} sizes={wide ? "text-[clamp(1.6rem,3vw,3rem)]" : undefined} />
                 </Reveal>
               );
             })}
