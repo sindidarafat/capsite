@@ -48,3 +48,6 @@ next-env.d.ts
 # compressed web versions; keep the masters on the server / a drive instead.
 /media/showreel/jolphool-subbed-final.mp4
 /media/uploads/jolphool-subbed-final.mp4
+
+# static build output (Cloudflare Pages)
+/out/

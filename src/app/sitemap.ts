@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 import { getJobs, getWorks } from "@/lib/store";
 
 export const revalidate = 3600;

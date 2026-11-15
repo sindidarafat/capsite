@@ -29,7 +29,7 @@ export default async function ContactPage() {
 
       <section className="wrap grid gap-12 pb-24 lg:grid-cols-12 md:pb-36">
         <div className="lg:col-span-8">
-          <BriefForm />
+          <BriefForm inbox={site.company.email} />
         </div>
         <aside className="grid gap-10 sm:grid-cols-2 lg:col-span-4 lg:block lg:space-y-10">
           <Reveal>

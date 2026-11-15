@@ -32,7 +32,53 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
 const field =
   "w-full border-b hairline bg-transparent py-4 text-xl font-semibold tracking-tight outline-none transition-colors placeholder:font-normal placeholder:text-mist focus:border-ink md:text-2xl";
 
-export default function BriefForm() {
+/** On the static (Cloudflare Pages) build there's no server, so briefs go to Web3Forms, which emails them to CAP. */
+const STATIC_SITE = process.env.NEXT_PUBLIC_STATIC_SITE === "1";
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "";
+
+function briefText(f: Form) {
+  const details = [
+    `Name: ${f.name}`,
+    `Email: ${f.email}`,
+    f.company ? `Company: ${f.company}` : "",
+    f.phone ? `Phone: ${f.phone}` : "",
+    `Needs: ${f.services.join(", ")}`,
+    `Budget: ${f.budget}`,
+    `Timeline: ${f.timeline}`,
+  ].filter(Boolean);
+  return `${details.join("\n")}\n\n${f.message}`;
+}
+
+async function sendStatic(f: Form, inbox: string) {
+  if (WEB3FORMS_KEY) {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: `New project brief — ${f.name}${f.company ? ` (${f.company})` : ""}`,
+        from_name: "CAP website",
+        replyto: f.email,
+        botcheck: f.website, // honeypot
+        Name: f.name,
+        Email: f.email,
+        Company: f.company,
+        Phone: f.phone,
+        Needs: f.services.join(", "),
+        Budget: f.budget,
+        Timeline: f.timeline,
+        Message: f.message,
+      }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || data.success === false) throw new Error(data.message || "Couldn't send. Please email us directly.");
+    return;
+  }
+  // no form service configured: open a ready-to-send email instead
+  window.location.href = `mailto:${inbox}?subject=${encodeURIComponent(`Project brief — ${f.name}`)}&body=${encodeURIComponent(briefText(f))}`;
+}
+
+export default function BriefForm({ inbox = "hello@cap.direct" }: { inbox?: string }) {
   const [step, setStep] = useState(0);
   const [f, setF] = useState<Form>(EMPTY);
   const [status, setStatus] = useState<"idle" | "sending" | "done">("idle");
@@ -45,9 +91,14 @@ export default function BriefForm() {
     setStatus("sending");
     setError("");
     try {
-      const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(data.error || "Something went wrong.");
+      if (STATIC_SITE) {
+        if (f.website) return setStatus("done"); // bot
+        await sendStatic(f, inbox);
+      } else {
+        const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || "Something went wrong.");
+      }
       setStatus("done");
     } catch (e) {
       setError((e as Error).message);
