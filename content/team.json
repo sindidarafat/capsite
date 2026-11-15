@@ -121,17 +121,6 @@
     "order": 10
   },
   {
-    "id": "hasib-mohammad-ashiq",
-    "name": "Hasib Mohammad Ashiq",
-    "role": "Human Resources (HR)",
-    "department": "operations",
-    "photo": "/media/team/hasib-mohammad-ashiq.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 11
-  },
-  {
     "id": "tahmina-taj",
     "name": "Tahmina Taj",
     "role": "Client Service Executive",
