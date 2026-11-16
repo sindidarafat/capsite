@@ -77,6 +77,17 @@
     "order": 6
   },
   {
+    "id": "ragib-shahriar",
+    "name": "Ragib Shahriar",
+    "role": "Copy Supervisor",
+    "department": "content",
+    "photo": "/media/team/ragib-shahriar.webp",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 7
+  },
+  {
     "id": "faisal-shahriar-anik",
     "name": "Faisal Shahriar Anik",
     "role": "Senior Visualizer",
@@ -85,7 +96,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 7
+    "order": 8
   },
   {
     "id": "imamul-baker-apolo",
@@ -96,7 +107,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 8
+    "order": 9
   },
   {
     "id": "hasin-ishraq-bijoy",
@@ -107,7 +118,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 9
+    "order": 10
   },
   {
     "id": "md-rakib-ul-islam",
@@ -118,7 +129,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 10
+    "order": 11
   },
   {
     "id": "tahmina-taj",
@@ -132,17 +143,6 @@
     "order": 12
   },
   {
-    "id": "ragib-shahriar",
-    "name": "Ragib Shahriar",
-    "role": "Copy Supervisor",
-    "department": "content",
-    "photo": "/media/team/ragib-shahriar.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 13
-  },
-  {
     "id": "tahsim-uzzaman",
     "name": "Tahsim Uzzaman",
     "role": "Writer (Intern)",
@@ -151,7 +151,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 14
+    "order": 13
   },
   {
     "id": "rashedul-islam",
@@ -162,7 +162,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 15
+    "order": 14
   },
   {
     "id": "sindid-arafat",
@@ -173,6 +173,6 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 16
+    "order": 15
   }
 ]
