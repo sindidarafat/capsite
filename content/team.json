@@ -88,17 +88,6 @@
     "order": 7
   },
   {
-    "id": "faisal-shahriar-anik",
-    "name": "Faisal Shahriar Anik",
-    "role": "Senior Visualizer",
-    "department": "production",
-    "photo": "",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 8
-  },
-  {
     "id": "imamul-baker-apolo",
     "name": "Imamul Baker Apolo",
     "role": "Director & Producer",
@@ -107,7 +96,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 9
+    "order": 8
   },
   {
     "id": "hasin-ishraq-bijoy",
@@ -118,7 +107,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 10
+    "order": 9
   },
   {
     "id": "md-rakib-ul-islam",
@@ -129,7 +118,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 11
+    "order": 10
   },
   {
     "id": "tahmina-taj",
@@ -140,7 +129,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 12
+    "order": 11
   },
   {
     "id": "tahsim-uzzaman",
@@ -151,7 +140,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 13
+    "order": 12
   },
   {
     "id": "rashedul-islam",
@@ -162,7 +151,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 14
+    "order": 13
   },
   {
     "id": "sindid-arafat",
@@ -173,6 +162,6 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 15
+    "order": 14
   }
 ]
