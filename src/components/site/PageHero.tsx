@@ -6,16 +6,18 @@ export default function PageHero({
   intro,
   children,
 }: {
-  label: string;
+  label?: string;
   title: string;
   intro?: string;
   children?: React.ReactNode;
 }) {
   return (
     <section className="wrap pb-16 pt-[calc(var(--header-h)+3.5rem)] md:pb-24 md:pt-[calc(var(--header-h)+6rem)]">
-      <Reveal>
-        <p className="t-label mb-8 text-stone">{label}</p>
-      </Reveal>
+      {label && (
+        <Reveal>
+          <p className="t-label mb-8 text-stone">{label}</p>
+        </Reveal>
+      )}
       <RiseText as="h1" immediate className="t-mega max-w-[14ch]" text={title} />
       {(intro || children) && (
         <Reveal delay={0.4} className="mt-10 grid gap-8 md:mt-16 md:grid-cols-12">

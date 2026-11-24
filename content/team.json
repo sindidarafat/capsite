@@ -132,6 +132,17 @@
     "order": 11
   },
   {
+    "id": "nusrat-laxme",
+    "name": "Nusrat Laxme",
+    "role": "Animation Artist",
+    "department": "production",
+    "photo": "/media/team/nusrat-laxme.webp",
+    "bio": "",
+    "linkedin": "",
+    "published": true,
+    "order": 12
+  },
+  {
     "id": "sindid-arafat",
     "name": "Sindid Arafat",
     "role": "Data Analyst ",
@@ -140,6 +151,6 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 12
+    "order": 13
   }
 ]

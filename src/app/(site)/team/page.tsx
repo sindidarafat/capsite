@@ -27,7 +27,6 @@ export default async function TeamPage() {
   return (
     <>
       <PageHero
-        label={`The crew — ${team.length} people`}
         title="The people who bring *ideas* to life."
         intro="From planning to final execution, we work as one team — shaping the work together, start to finish."
       />
