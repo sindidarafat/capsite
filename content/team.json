@@ -55,17 +55,6 @@
     "order": 4
   },
   {
-    "id": "md-tareq-hossain",
-    "name": "Tareq Hossain",
-    "role": "Chief Operating Officer",
-    "department": "operations",
-    "photo": "/media/team/md-tareq-hossain.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 5
-  },
-  {
     "id": "amit-pramanik",
     "name": "Amit Pramanik",
     "role": "Creative Director",
@@ -74,7 +63,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 6
+    "order": 5
   },
   {
     "id": "ragib-shahriar",
@@ -85,7 +74,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 7
+    "order": 6
   },
   {
     "id": "imamul-baker-apolo",
@@ -96,7 +85,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 8
+    "order": 7
   },
   {
     "id": "hasin-ishraq-bijoy",
@@ -107,7 +96,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 9
+    "order": 8
   },
   {
     "id": "md-rakib-ul-islam",
@@ -118,7 +107,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 10
+    "order": 9
   },
   {
     "id": "tahmina-taj",
@@ -129,18 +118,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 11
-  },
-  {
-    "id": "tahsim-uzzaman",
-    "name": "Tahsim Uzzaman",
-    "role": "Writer (Intern)",
-    "department": "content",
-    "photo": "/media/team/tahsim-uzzaman.webp",
-    "bio": "",
-    "linkedin": "",
-    "published": true,
-    "order": 12
+    "order": 10
   },
   {
     "id": "rashedul-islam",
@@ -151,7 +129,7 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 13
+    "order": 11
   },
   {
     "id": "sindid-arafat",
@@ -162,6 +140,6 @@
     "bio": "",
     "linkedin": "",
     "published": true,
-    "order": 14
+    "order": 12
   }
 ]
