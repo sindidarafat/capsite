@@ -33,10 +33,10 @@ export default async function TeamPage() {
 
       {/* everyone together, in the order set in the admin (Team → order) */}
       <section className="wrap pb-20 md:pb-28" aria-label="Team members">
-        <ul className="grid grid-cols-2 gap-x-4 gap-y-10 border-t hairline pt-10 md:grid-cols-3 md:gap-x-6 md:gap-y-14 lg:grid-cols-4">
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-8 border-t hairline pt-10 sm:grid-cols-3 md:grid-cols-4 md:gap-x-5 md:gap-y-10 lg:grid-cols-7 lg:gap-x-4">
           {team.map((p, i) => (
-              <Reveal as="li" key={p.id} delay={(i % 4) * 0.06} className="group">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.25rem] bg-sand">
+              <Reveal as="li" key={p.id} delay={(i % 7) * 0.05} className="group">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[1rem] bg-sand">
                   {p.photo ? (
                     <Media
                       src={p.photo}
@@ -44,7 +44,7 @@ export default async function TeamPage() {
                       className="h-full w-full grayscale-[0.85] transition duration-700 ease-[var(--ease-out-expo)] group-hover:scale-[1.04] group-hover:grayscale-0"
                     />
                   ) : (
-                    <span className="grid h-full w-full place-items-center bg-clay/60 font-display text-5xl text-bone">{initials(p.name)}</span>
+                    <span className="grid h-full w-full place-items-center bg-clay/60 font-display text-4xl text-bone lg:text-3xl">{initials(p.name)}</span>
                   )}
                   {p.linkedin && (
                     <a
@@ -57,8 +57,8 @@ export default async function TeamPage() {
                     </a>
                   )}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold leading-tight tracking-tight">{p.name}</h3>
-                <p className="text-sm text-stone">{p.role}</p>
+                <h3 className="mt-3 text-base font-semibold leading-tight tracking-tight lg:text-[0.95rem]">{p.name}</h3>
+                <p className="mt-0.5 text-sm leading-snug text-stone lg:text-[0.8rem]">{p.role}</p>
                 {p.bio && <p className="mt-2 line-clamp-5 text-sm leading-relaxed text-graphite sm:line-clamp-none" title={p.bio}>{p.bio}</p>}
               </Reveal>
           ))}
